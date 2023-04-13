@@ -196,6 +196,9 @@ const data = [
 
 ]
 
+const $context = document.getElementById('context');
+const $banhmi = document.getElementById('banhmi-btn');
+
 window.onscroll = function() {myFunction()};
 
 const header = document.getElementById("myHeader");
@@ -208,3 +211,33 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+function renderData(data) {
+
+let result = ``;
+
+for (const item of data)
+{
+  result += `<h1>${item.name}</h1>
+  <div class="item">
+    <div>
+      <img src=${img} />
+      <ul>
+        <li>Địa điểm: ${item.address}</li>
+        <li>Mức giá giao động: ${item.minPrice} - ${item.maxPrice} đồng</li>
+        <li>Giờ mở cửa: ${item.timeOpen}-${item.timeClose}</li>
+      </ul>
+    </div>
+    <div class="item-content">
+      <p>
+       ${item.kobiet}
+      </p>
+      <a href="#">Xem Thêm...</a>
+    </div>
+  </div>
+</div>`;
+}
+  $context.innerHTML = result;
+}
+
+renderData(data);
