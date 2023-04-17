@@ -87,7 +87,7 @@ body, html {
 .title {
     box-sizing: border-box;
     width: 1400px;
-    height: 1500px;
+    height: fit-content;
     background-color: rgb(255, 222, 198);
     padding: 40px;
 }
