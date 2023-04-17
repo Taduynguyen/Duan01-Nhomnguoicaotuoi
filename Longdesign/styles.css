@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+
+body, html {
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color:#ECB390;
+    --1st-color:#ff2020;
+    --2nd-color:#BB5A5A;
+    --3th-color:#1B120F;
+}
+
+.container {
+    font-family: 'Comfortaa', cursive;
+    width: 1400px;
+    position: relative;
+    color: var(--main-color);
+}
+
+.header {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+    background-color: var(--main-color);
+    top: 0;
+    z-index: 1;
+    font-family: 'Lora', serif;
+}
+.logo {
+    text-decoration: none;
+    font-size: 40px;
+    position: absolute;
+    left: 620px;
+    font-weight: bolder;
+    color: rgb(236, 56, 59)
+}
+
+.menu-header {
+    display: flex;
+    gap: 2px;
+    color:var(--1st-color);
+}
+
+.menu { 
+    cursor: pointer;
+    padding: 10px 14px;
+    color: var(--1st-color);
+}
+
+.menu:hover {
+    background-color: #fff;
+    color: var(--2nd-color);
+    border-radius: 50px;
+}
+
+.order-btn {
+    background: var(--1st-color);
+    border: 1px solid var(--1st-color);
+    cursor: pointer;
+    color: var(--main-color);
+    padding: 10px 26px;
+    border-radius: 50px;
+}
+
+.order-btn:hover {
+    background-color: var(--main-color);
+    color: var(--1st-color);
+}
+
+.home {
+    position: absolute;
+    color: var(--1st-color);
+    top: 100px;
+    left: 130px;
+    font-size:50px;
+}
+.home h1{
+    font-weight: 700px;
+    color: var(--main-color);
+}
+.brand{
+    color: var(--1st-color);
+}
+.slogan{
+    color:var(--3th-color);
+    font-size: 2rem;
+}
+
+.img{
+    width: 1400px;
+}
+
+.title {
+    box-sizing: border-box;
+    width: 1400px;
+    height: 1500px;
+    background-color: var(--main-color);
+    padding: 40px;
+}
+
+.title-tag {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    font-size: 30px;
+    padding: 40px 0;
+    font-weight: 900;
+}
+
+.tag {
+    cursor: pointer;
+    color: var(--1st-color);
+    padding: 10px 26px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+}
+
+.tag-active, .tag:hover {
+    border: 2px solid var(--1st-color);
+    padding: 10px 26px;
+    border-radius: 50px;
+}
+
+.mb12{
+    margin-bottom: 12px;
+}
+
+.title-content {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.content {
+    width: 100%;
+    margin-bottom: 50px;
+    font-family: 'Lora', serif;
+}
+
+.content h1{
+    font-size: 30px;
+    color: var(--1st-color);
+}
+
+.item {
+    display: flex;
+    border: 1px solid var(--1st-color);
+    border-radius: 40px;
+}
+
+.item-content {
+    margin: 0 20px;
+    font-size: 22px;
+    color: var(--1st-color);
+}
+
+.title-img {
+    width: 430px;
+    height: 330px;
+    border-radius: 40px;
+}
+
+
+
+/* Page 2 */
+section{
+    background-color: var(--main-color);
+    margin-top: 2rem;
+}
+.top-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-box{
+    color: var(--3th-color);
+    width: fit-content;
+    padding: 3rem;
+}
+.left-box h1, .bottom-content h1{
+    font-size: 32px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.left-box h2{
+    font-size: 20px;
+}
+.left-box ul li{
+    font-size: 18px;
+}
+.left-box p, .bottom-content p{
+    font-size: 16px;
+}
+.position{
+    padding: 4rem;
+}
+.right-box {
+    width: 660px;
+    height: 440px;
+}
+
+.bottom-content{
+    padding: 50px ;
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+.mission{
+    background-color: #FFD4D4;
+}
+.about{
+    background-color: #9ce2fc;
+}
+.responsible{
+    background-color: #FFD4D4;
+}
+
+/* Hàng Quán */
+.heading{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+}
+.heading span{
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--1st-color);
+}
+.heading h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--3th-color);
+}
+.shop-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 4rem;
+}
+.shop-container .box{
+    flex: 1 1 auto;
+    background-color: #BB5A5A;
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    border-radius: 2rem;
+}
+#item{
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    border: none;
+    border-radius: 2rem;
+}
+.shop-container .box .box-img{
+    width: 140px;
+    height: 140px;
+    margin-top: -100px;
+}
+.shop-container .box .box-img img{
+    width: 100px;
+    height: 100%;
+    object-fit: contain;
+    object-position: center; 
+}
+.stars{
+    margin: 1rem 0 0.1rem
+}
+.shop-container .box .stars .bx{
+    color:yellow;
+}
+.shop-container .box h2{
+    color: var(--main-color);
+    font-size: 16px;
+}
+.shop-container .box h2{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+.shop-container .box span{
+    color: var(--3th-color);
+    font-size: 16px;
+    font-weight: 500;
+    margin: .2rem 0 .5rem;
+}
+.box .shop-btn{
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    height: 2rem;
+    margin: 1rem;
+    padding: .3rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color);    
+}
+.box .shop-btn:hover{
+    background:rgb(236, 56, 59);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 500px;
+    background-color: var(--3th-color);
+    display: flex;
+    padding: 60px 40px;
+    justify-content: space-evenly;
+
+}
+
+.footer-context {
+    color: #fff;
+}
+
+.footer-menu {
+    font-size: 25px;
+    padding-bottom: 30px;
+    font-weight: bolder;
+    font-family: 'Lora', serif;
+}
+
+.footer-tag {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+
