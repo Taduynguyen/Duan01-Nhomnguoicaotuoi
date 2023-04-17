@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+
+body, html {
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    font-family: 'Comfortaa', cursive;
+    width: 1400px;
+    position: relative;
+    color: rgb(236, 56, 59);
+}
+
+.header {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+    background-color: rgb(255, 222, 198);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-family: 'Lora', serif;
+}
+.logo {
+    text-decoration: none;
+    font-size: 40px;
+    position: absolute;
+    left: 620px;
+    font-weight: bolder;
+    color: rgb(236, 56, 59)
+}
+
+.menu-header {
+    display: flex;
+    gap: 2px;
+}
+
+.menu { 
+    cursor: pointer;
+    padding: 10px 14px;
+}
+
+.menu:hover {
+    background-color: rgb(236, 56, 59);
+    color: rgb(255, 222, 198);
+    border-radius: 50px;
+}
+
+.order-btn {
+    background: rgb(236, 56, 59);
+    border: 1px solid rgb(236, 56, 59);
+    cursor: pointer;
+    color: rgb(255, 222, 198);
+    padding: 10px 26px;
+    border-radius: 50px;
+}
+
+.order-btn:hover {
+    background-color: rgb(255, 222, 198);
+    color: rgb(236, 56, 59);
+}
+
+.main-image {
+    
+}
+
+.slogan {
+    position: absolute;
+    color: rgb(56, 194, 236);
+    top: 350px;
+    left: 130px;
+    font-size:50px;
+}
+
+.img {
+    width: 1400px;
+}
+
+.title {
+    box-sizing: border-box;
+    width: 1400px;
+    height: fit-content;
+    background-color: rgb(255, 222, 198);
+    padding: 40px;
+}
+
+.title-tag {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    font-size: 30px;
+    padding: 40px 0;
+    font-weight: 900;
+}
+
+.tag {
+    cursor: pointer;
+    color: rgb(255, 181, 181);
+    padding: 10px 26px;
+    border: 1px solid rgb(255, 222, 198);
+}
+
+.tag-active, .tag:hover {
+    color: rgb(236, 56, 59);
+    border: 1px solid rgb(236, 56, 59);
+    padding: 10px 26px;
+    border-radius: 50px;
+}
+
+.mb12{
+    margin-bottom: 12px;
+}
+
+.title-content {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.content {
+    width: 100%;
+    margin-bottom: 50px;
+    font-family: 'Lora', serif;
+}
+
+.content h1{
+    font-size: 30px;
+}
+
+.item {
+    display: flex;
+    border: 1px solid rgb(236, 56, 59) ;
+    border-radius: 40px;
+}
+
+.item-content {
+    margin: 0 20px;
+    font-size: 22px;
+}
+
+.title-img {
+    width: 430px;
+    height: 330px;
+    border-radius: 40px;
+}
+
+.footer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 222, 198);
+    display: flex;
+    padding: 60px 40px;
+    justify-content: space-evenly;
+
+}
+
+.footer-context {
+
+}
+
+.footer-menu {
+    font-size: 25px;
+    padding-bottom: 30px;
+    font-weight: bolder;
+    font-family: 'Lora', serif;
+}
+
+.footer-tag {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
