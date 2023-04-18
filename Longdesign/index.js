@@ -142,6 +142,17 @@ function renderData(data) {
   });
 
   titleContent.innerHTML = str;
-}
+};
 
-renderData(data);
+const dataViahe = data.filter(data => data.type === "viahe");
+const dataQuanan = data.filter(data => data.type === "quanan");
+const dataNhahang = data.filter(data => data.type === "nhahang");
+
+const $viahe = document.getElementById("viahe");
+const $quanan = document.getElementById("quanan");
+const $nhahang = document.getElementById("nhahang");
+
+$viahe.addEventListener("click", renderData(dataViahe));
+$quanan.addEventListener("click", renderData(dataQuanan));
+$nhahang.addEventListener("click", renderData(dataNhahang));
+
