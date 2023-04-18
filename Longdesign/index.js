@@ -102,6 +102,9 @@ const data = [
 const titleContent = document.getElementById('title-content');
 const titles = document.getElementsByClassName("title-tag");
 const tags = document.getElementsByClassName("tag");
+const $viahe = document.getElementById("viahe");
+const $quanan = document.getElementById("quanan");
+const $nhahang = document.getElementById("nhahang");
 
 for (let i = 0; i < tags.length; i++) {
   tags[i].addEventListener("click", function() {
@@ -142,13 +145,13 @@ function renderData(data) {
   });
 
   titleContent.innerHTML = str;
-}
+};
 
-<<<<<<< Updated upstream
-const dataViahe = data.filter(data.type === 'viahe');
-=======
-renderData(data);
+const dataViahe = data.filter(data => data.type === "viahe");
+const dataQuanan = data.filter(data => data.type === "quanan");
+const dataNhahang = data.filter(data => data.type === "nhahang");
 
-const dataViahe = data.filter(data => data.type === 'viahe');
->>>>>>> Stashed changes
-console.log(dataViahe);
+$viahe.addEventListener("click", renderData(dataViahe));
+$quanan.addEventListener("click", renderData(dataQuanan));
+$nhahang.addEventListener("click", renderData(dataNhahang));
+
