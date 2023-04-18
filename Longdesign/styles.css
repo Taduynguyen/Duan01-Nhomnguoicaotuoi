@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
+* {
+    text-decoration: none;
+}
 
 body, html {
     margin: 0;
@@ -29,6 +32,7 @@ body, html {
     z-index: 1;
     font-family: 'Lora', serif;
 }
+
 .logo {
     text-decoration: none;
     font-size: 40px;
@@ -102,6 +106,7 @@ overflow: hidden;
     width: 296px;
     height: 48px;
     border: 1px #fff solid;
+    font-family: 'Lora', serif;
 }
 
 .sign-in-btn {
@@ -111,6 +116,7 @@ overflow: hidden;
 
 .sign-in-btn:hover {
     background-color: rgb(236, 56, 59);
+    color: #fff;
 }
 
 .order-btn {
