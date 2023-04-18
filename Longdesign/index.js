@@ -144,4 +144,5 @@ function renderData(data) {
   titleContent.innerHTML = str;
 }
 
-renderData(data);
+const dataViahe = data.filter(data.type === 'viahe');
+console.log(dataViahe);
