@@ -8,4 +8,11 @@ for (let i = 0; i < tags.length; i++) {
   });
 }
 
-console.log(tags);
+function headerMenu() {
+  const x = document.getElementById ("menuBtns");
+  if (x.className === "menu-btn") {
+    x.className += " responsive";
+  } else {
+    x.className = "menu-btn";
+  }
+}
