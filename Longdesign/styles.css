@@ -54,6 +54,65 @@ body, html {
     border-radius: 50px;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+.modal-content {
+background-color: rgb(255, 222, 198);
+margin: 10% auto;
+padding: 20px;
+border: 1px solid #888;
+width: 300px;
+border-radius: 20px;
+}
+
+.close {
+float: right;
+cursor: pointer;
+}
+
+.fade {
+animation-name: fadeInOut;
+animation-duration: 0.5s;
+}
+
+@keyframes fadeInOut {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+
+body.modal-open {
+overflow: hidden;
+}
+
+.input-form {
+    margin-bottom: 8px;
+    border-radius: 16px;
+    padding-left: 8px;
+    width: 296px;
+    height: 48px;
+    border: 1px #fff solid;
+}
+
+.sign-in-btn {
+    cursor: pointer;
+    width: 308px;
+}
+
+.sign-in-btn:hover {
+    background-color: rgb(236, 56, 59);
+}
+
 .order-btn {
     background: rgb(236, 56, 59);
     border: 1px solid rgb(236, 56, 59);
@@ -179,3 +238,4 @@ body, html {
     padding-bottom: 15px;
     align-items: center;
 }
+
