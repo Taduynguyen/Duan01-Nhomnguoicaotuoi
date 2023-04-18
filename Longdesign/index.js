@@ -111,6 +111,18 @@ for (let i = 0; i < tags.length; i++) {
   });
 }
 
+document.getElementById("loginBtn").addEventListener("click", function() {
+  document.getElementById("loginModal").style.display = "block";
+  document.body.classList.add("modal-open");
+});
+
+document.getElementById("loginModal").addEventListener("click", function(event) {
+  if (event.target === document.getElementById("loginModal") || event.target.classList.contains("close")) {
+    document.getElementById("loginModal").style.display = "none";
+    document.body.classList.remove("modal-open");
+  }
+});
+
 function createCard(cardInfo) {
   const {name, img, price, time, address, about} = cardInfo;
 
@@ -157,4 +169,6 @@ const $nhahang = document.getElementById("nhahang");
 $viahe.addEventListener("click", () => renderData(dataViahe));
 $quanan.addEventListener("click", () =>  renderData(dataQuanan));
 $nhahang.addEventListener("click", () =>  renderData(dataNhahang));
+
+
 
