@@ -9,3 +9,25 @@ for (let i = 0; i < tags.length; i++) {
 }
 
 console.log(tags);
+// Làm liên kết
+// Trang chủ
+
+
+
+
+// Giới thiệu
+
+
+// Quán ăn
+
+
+// Quán nước
+
+
+
+
+// Liên lạc
+
+
+
+// Đăng nhập
