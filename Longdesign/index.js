@@ -144,5 +144,11 @@ function renderData(data) {
   titleContent.innerHTML = str;
 }
 
+<<<<<<< Updated upstream
 const dataViahe = data.filter(data.type === 'viahe');
+=======
+renderData(data);
+
+const dataViahe = data.filter(data => data.type === 'viahe');
+>>>>>>> Stashed changes
 console.log(dataViahe);
