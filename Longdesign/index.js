@@ -7,12 +7,3 @@ for (let i = 0; i < tags.length; i++) {
     this.className += " tag-active";
   });
 }
-
-function headerMenu() {
-  const x = document.getElementById ("menuBtns");
-  if (x.className === "menu-btn") {
-    x.className += " responsive";
-  } else {
-    x.className = "menu-btn";
-  }
-}
