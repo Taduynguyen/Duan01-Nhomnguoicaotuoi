@@ -3,6 +3,7 @@
 
 *{
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body, html {
@@ -23,17 +24,13 @@ body, html {
 .header {
     font-family: 'Lora', serif;
     display: grid;
-    grid-template-columns: 45% 33% 22%;
+    grid-template-columns: 45% 30% 25%;
     background-color: rgb(255, 222, 198);
     padding: 1vw ;
     position: sticky;
     top: 0;
     z-index: 1;
     border-bottom: 3px solid white;
-}
-
-.menu-icon {
-    display: none;
 }
 
 .logo {
@@ -65,6 +62,77 @@ body, html {
     background-color: rgb(236, 56, 59);
     color: rgb(255, 222, 198);
     border-radius: 2vw;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+.modal-content {
+    background-color: rgb(255, 222, 198);
+    margin: 10% auto;
+    padding: 0 20px 30px;
+    border: 1px solid  rgb(236, 56, 59);
+    width: 20%;
+    border-radius: 2vw;
+    position: relative;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+}
+
+.fade {
+    animation-name: fadeInOut;
+    animation-duration: 0.5s;
+}
+
+@keyframes fadeInOut {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.input-form {
+    margin-bottom: 8px;
+    border-radius: 16px;
+    padding-left: 8px;
+    width: 100%;
+    height: 48px;
+    border: 1px #fff solid;
+    font-family: 'Lora', serif;
+}
+
+.sign-in-btn {
+    cursor: pointer;
+    width: 100%;
+    background-color: rgb(236, 56, 59);
+    color: white;
+    font-size: larger;
+}
+
+.signup {
+    position: absolute;
+    bottom: 10px;
+    left: 55px;
+}
+
+.sign-in-btn:hover {
+    background-color: rgb(173, 34, 36);
+    color: #fff;
 }
 
 .order-btn {
@@ -109,6 +177,7 @@ body, html {
 
 .img {
     width: 100%;
+
 }
 
 .title {
@@ -182,8 +251,8 @@ body, html {
 }
 
 .title-img {
-    width: 40%;
-    height: 40%;
+    width: 20vw;
+    height: 20vw;
     border-radius: 2vw;
 }
 
